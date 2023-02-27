@@ -28,4 +28,5 @@ def arithmetic_arranger(problems, solver=False):
     
   if op == "+" then:
      totals = topNumber + bottomNumber
-    
+  if op == "-" then:
+      totals = topNumber - bottomNumber
