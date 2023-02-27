@@ -26,4 +26,6 @@ def arithmetic_arranger(problems, solver=False):
   if topNumber > 4 or bottomNumber > 4:
     return "Error: Numbers cannot be more than four digits."
     
+  if op == "+" then:
+     totals = topNumber + bottomNumber
     
