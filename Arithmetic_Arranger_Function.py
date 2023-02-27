@@ -1,4 +1,4 @@
-def arithmetic_arranger(problems):
+def arithmetic_arranger(problems, displayResult):
     #If problems exceed 5 return error
     if len(problems) > 5:
         return "Error: Too many problems."
@@ -88,7 +88,8 @@ def arithmetic_arranger(problems):
 
         finalResult = f"{topTier} \n {bottomTier}\n {lines} \n {totals}"
 
-    return finalResult
+    if displayResult:
+        return finalResult
 
-print(arithmetic_arranger(["32 + 8", "1 - 3801", "9999 + 9999", "523 - 49"]))
+print(arithmetic_arranger(["32 + 8", "1 - 3801", "9999 + 9999", "523 - 49"], True))
 #print(arithmetic_arranger(["32 + 69","32 + 698","32 + 698","32 + 698","32 + 698"]))
